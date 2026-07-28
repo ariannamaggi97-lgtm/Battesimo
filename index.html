@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Il Battesimo di Ginevra</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- SCHERMATA INIZIALE -->
+
+<section id="intro" class="screen">
+
+    <div class="envelope-wrapper">
+
+        <div class="envelope" id="openEnvelope">
+
+            <div class="flap"></div>
+
+            <div class="letter">
+
+                <h2>
+                    Il Battesimo di Ginevra
+                </h2>
+
+            </div>
+
+
+            <div class="seal">
+                G
+            </div>
+
+        </div>
+
+
+        <p class="tap-text">
+            Tocca la busta per aprire l'invito
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- INVITO -->
+
+<section id="invitation" class="screen hidden">
+
+
+    <div class="card">
+
+
+        <div class="decor">
+            🌸
+        </div>
+
+
+        <h1>
+            Il Battesimo di Ginevra
+        </h1>
+
+
+        <p class="text">
+
+            Con immensa gioia vi invitiamo a condividere con noi
+            un giorno speciale, in cui la nostra piccola
+            <strong>Ginevra</strong>
+            riceverà il Sacramento del Battesimo.
+
+        </p>
+
+
+
+        <div class="line"></div>
+
+
+
+        <h2>
+            Sabato 12 Settembre 2026
+        </h2>
+
+
+        <p class="info">
+
+            Ore 11:30
+
+            <br><br>
+
+            Chiesa di Sant'Agostino
+
+            <br>
+
+            Colle di Val d'Elsa
+
+        </p>
+
+
+
+        <div id="countdown">
+
+        </div>
+
+
+
+        <div class="line"></div>
+
+
+
+        <h3>
+            A seguire
+        </h3>
+
+
+        <p class="info">
+
+            Agriturismo La Pimpinella di Semifonte
+
+            <br>
+
+            Barberino Tavarnelle (FI)
+
+        </p>
+
+
+
+        <div class="buttons">
+
+
+            <button id="churchMap">
+                📍 Chiesa
+            </button>
+
+
+            <button id="locationMap">
+                📍 Ricevimento
+            </button>
+
+
+            <button id="rsvpButton">
+                Conferma presenza
+            </button>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- RSVP -->
+
+
+<section id="rsvp" class="screen hidden">
+
+
+<div class="card">
+
+
+<h2>
+Conferma la tua presenza
+</h2>
+
+
+
+<form id="rsvpForm">
+
+
+<input 
+type="text"
+id="guestName"
+placeholder="Nome e Cognome"
+required>
+
+
+
+<select id="attendance">
+
+
+<option value="Presente">
+Sarò presente
+</option>
+
+
+<option value="Assente">
+Non potrò esserci
+</option>
+
+
+</select>
+
+
+
+<input
+type="number"
+id="adults"
+min="1"
+value="1"
+placeholder="Numero adulti">
+
+
+
+<input
+type="number"
+id="children"
+min="0"
+value="0"
+placeholder="Numero bambini">
+
+
+
+<textarea
+id="notes"
+placeholder="Allergie o intolleranze">
+</textarea>
+
+
+
+<textarea
+id="message"
+placeholder="Un pensiero per Ginevra (facoltativo)">
+</textarea>
+
+
+
+<button type="submit">
+
+Invia conferma
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- RINGRAZIAMENTO -->
+
+
+<section id="thanks" class="screen hidden">
+
+
+<div class="card">
+
+
+<h2>
+Grazie ❤️
+</h2>
+
+
+
+<p class="text">
+
+La tua conferma è stata registrata.
+
+</p>
+
+
+<p class="text">
+
+Non vediamo l'ora di condividere con te
+questa giornata speciale.
+
+</p>
+
+
+
+<h3>
+
+Arianna, Mattia e Ginevra
+
+</h3>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script src="js/main.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/rsvp.js"></script>
+
+
+
+</body>
+
+</html>
